@@ -1,0 +1,7 @@
+@use "../utilities/variables";
+
+body {
+  padding: 35px 25px;
+  background-color: variables.$off-white;
+  font-family: 'Inter', sans-serif;
+}
