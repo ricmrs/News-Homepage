@@ -1,7 +1,7 @@
 * {
   border: 0;
   box-sizing: border-box;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -66,6 +66,10 @@ body {
   font-size: 1em;
   font-weight: 400;
 }
+.header .nav-modal .nav-bar .nav-link:hover, .header .nav-modal .nav-bar .nav-link:focus {
+  cursor: pointer;
+  color: hsl(35deg, 77%, 62%);
+}
 
 @media screen and (min-width: 700px) {
   .header {
@@ -128,6 +132,10 @@ body {
   padding: 12px 30px;
   text-transform: uppercase;
 }
+.heading .button:hover, .heading .button:focus {
+  background-color: hsl(240deg, 100%, 5%);
+  cursor: pointer;
+}
 
 @media screen and (min-width: 1000px) {
   .heading {
@@ -170,8 +178,13 @@ body {
 }
 .new .list .post .title {
   color: hsl(36deg, 100%, 99%);
+  display: block;
   font-size: 1.25em;
   margin-bottom: 1em;
+}
+.new .list .post .title:hover, .new .list .post .title:focus {
+  color: hsl(35deg, 77%, 62%);
+  cursor: pointer;
 }
 .new .list .post .subtitle {
   color: hsl(236deg, 13%, 42%);
@@ -186,7 +199,10 @@ body {
 
 @media screen and (min-width: 1300px) {
   .new .list {
-    gap: 3em;
+    gap: 2.5em;
+  }
+  .new .list .post .title {
+    font-size: 1.8em;
   }
 }
 .most-popular .title {
@@ -202,9 +218,14 @@ body {
   text-align: justify;
 }
 .most-popular .list .post .title {
+  color: hsl(240deg, 100%, 5%);
   font-size: 1.2em;
   grid-area: 2/2/3/3;
   visibility: visible;
+}
+.most-popular .list .post .title:hover, .most-popular .list .post .title:focus {
+  color: hsl(35deg, 77%, 62%);
+  cursor: pointer;
 }
 .most-popular .list .post .subtitle {
   color: hsl(236deg, 13%, 42%);

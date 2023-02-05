@@ -14,9 +14,14 @@
       padding-right: 10px;
       text-align: justify;
       .title {
+        color: variables.$very-dark-blue;
         font-size: 1.2em;
         grid-area: 2/2/3/3;
         visibility: visible;
+      }
+      .title:hover, .title:focus{
+        color: variables.$orange;
+        cursor: pointer;
       }
       .subtitle {
         color: variables.$dark-grayish-blue;

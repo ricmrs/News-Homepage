@@ -35,6 +35,10 @@
         font-size: 1em;
         font-weight: 400;
       }
+      .nav-link:hover, .nav-link:focus{
+        cursor: pointer;
+        color: variables.$orange;
+      }
     }
   }
 }

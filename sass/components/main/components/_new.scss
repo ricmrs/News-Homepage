@@ -15,8 +15,13 @@
     .post {
       .title {
         color: variables.$off-white;
+        display: block;
         font-size: 1.25em;
         margin-bottom: 1em;
+      }
+      .title:hover, .title:focus{
+        color: variables.$orange;
+        cursor: pointer;
       }
       .subtitle {
         color: variables.$dark-grayish-blue;
@@ -35,7 +40,12 @@
 @media screen and (min-width: 1300px) {
   .new {
     .list {
-      gap: 3em;
+      gap: 2.5em;
+      .post {
+        .title {
+          font-size: 1.8em;
+        }
+      }
     }
   }
 }
