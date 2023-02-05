@@ -29,10 +29,11 @@
         font-weight: 400;
         text-align: start;
       }
-    }
-    .line {
-      background-color: variables.$dark-grayish-blue;
-      height: 1px;
+      .line {
+        background-color: variables.$dark-grayish-blue;
+        height: 1px;
+        margin-top: 2em;
+      }
     }
   }
 }
