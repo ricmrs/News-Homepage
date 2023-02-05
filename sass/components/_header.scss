@@ -1,9 +1,40 @@
+@use "../utilities/variables";
+
 .header {
   align-items: center;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  .nav-bar {
+  .nav-modal {
+    background-color: rgba(0, 0, 0, 0.4);
     display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .nav-bar {
+      background-color: variables.$off-white;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      height: 100%;
+      margin-left: 40vw;
+      padding: 20px;
+      padding-top: 35%;
+      width: 60vw;
+      .button {
+        position: absolute;
+        right: 24px;
+        top: 42px;
+      }
+      .nav-link {
+        color: variables.$very-dark-blue;
+        font-size: 1em;
+        font-weight: 400;
+      }
+    }
   }
 }

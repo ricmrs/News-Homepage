@@ -1,0 +1,44 @@
+@use "../utilities/variables";
+
+.most-popular {
+  .title {
+    visibility: hidden;
+  }
+  .list {
+    .post {
+      column-gap: 20px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: repeat(3, auto);
+      margin-bottom: 40px;
+      padding-right: 10px;
+      text-align: justify;
+      .title {
+        font-size: 1.2em;
+        grid-area: 2/2/3/3;
+        visibility: visible;
+      }
+      .subtitle {
+        color: variables.$dark-grayish-blue;
+        font-size: 1em;
+        font-weight: 400;
+        grid-area: 3/2/3/2;
+      }
+      .image {
+        grid-area: 1/1/4/2;
+        width: 6em;
+      }
+    }
+    .post::before {
+      color: variables.$grayish-blue;
+      font-size: 2em;
+      font-weight: 700;
+      grid-area: 1/2/2/2;
+    }
+    @for $i from 1 through 3 {
+      .post:nth-child(n+#{$i})::before {
+        content: '0#{$i}';
+      }
+    }
+  }
+}

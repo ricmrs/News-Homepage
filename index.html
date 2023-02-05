@@ -12,17 +12,6 @@
 
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -32,16 +21,21 @@
         <img src="./assets/images/logo.svg" alt="W. Logo">
       </a>
     </h1>
-    <button>
-      <img src="./assets/images/icon-menu.svg" alt="Menu">
+    <button class="button">
+      <img src="./assets/images/icon-menu.svg" alt="Menu button">
     </button>
-    <nav class="nav-bar">
-      <a href="#" class="nav-link">Home</a>
-      <a href="#" class="nav-link">New</a>
-      <a href="#" class="nav-link">Popular</a>
-      <a href="#" class="nav-link">Trending</a>
-      <a href="#" class="nav-link">Categories</a>
-    </nav>
+    <div class="nav-modal" role="dialog">
+      <nav class="nav-bar">
+        <button class="button">
+          <img src="./assets/images/icon-menu-close.svg" alt="Close menu button">
+        </button>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">New</a>
+        <a href="#" class="nav-link">Popular</a>
+        <a href="#" class="nav-link">Trending</a>
+        <a href="#" class="nav-link">Categories</a>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="heading">
@@ -78,20 +72,23 @@
       </ul>
     </aside>
 
-    <aside>
-      <h2>Most popular</h2>
-      <ol>
-        <li>
-          <h3>Reviving Retro PCs</h3>
-          <h4>What happens when old PCs are given modern upgrades?</h4>
+    <aside class="most-popular">
+      <h2 class="title">Most popular</h2>
+      <ol class="list">
+        <li class="post">
+          <h3 class="title">Reviving Retro PCs</h3>
+          <h4 class="subtitle">What happens when old PCs are given modern upgrades?</h4>
+          <img class="image" src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
         </li>
-        <li>
-          <h3>Top 10 Laptops of 2022</h3>
-          <h4>Our best picks for various needs and budgets.</h4>
+        <li class="post">
+          <h3 class="title">Top 10 Laptops of 2022</h3>
+          <h4 class="subtitle">Our best picks for various needs and budgets.</h4>
+          <img class="image" src="./assets/images/image-top-laptops.jpg" alt="Keyboard">
         </li>
-        <li>
-          <h3>The Growth of Gaming</h3>
-          <h4>How the pandemic has sparked fresh opportunities.</h4>
+        <li class="post">
+          <h3 class="title">The Growth of Gaming</h3>
+          <h4 class="subtitle">How the pandemic has sparked fresh opportunities.</h4>
+          <img class="image" src="./assets/images/image-gaming-growth.jpg" alt="Joystick getting catched">
         </li>
       </ol>
     </aside>
@@ -99,8 +96,10 @@
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="github.com/ricmrs">ricmrs</a>.
   </footer>
+
+  <script src="scripts/menu-nav.js"></script>
 </body>
 
 </html>
