@@ -3,7 +3,7 @@
 body {
   background-color: variables.$off-white;
   font-family: 'Inter', sans-serif;
-  padding: 35px 20px;
+  padding: 35px 20px 20px;
   height: 100%;
 }
 
@@ -14,4 +14,10 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 50px 50px 20px;
+  }
 }

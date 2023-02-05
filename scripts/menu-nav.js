@@ -2,8 +2,8 @@ const menuButton = document.querySelectorAll('.header .button');
 const navModal = document.querySelector('.header .nav-modal');
 
 const toggleMenu = () => {
-  if(!(navModal.style.display == 'block')){
-    navModal.style.display = 'block';
+  if(!(navModal.style.display == 'flex')){
+    navModal.style.display = 'flex';
   } else {
     navModal.style.display = 'none';
   }

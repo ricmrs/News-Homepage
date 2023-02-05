@@ -38,3 +38,45 @@
     }
   }
 }
+
+@media screen and (min-width: 700px) {
+  .header {
+    margin-bottom: 40px;
+    .button {
+      display: none;
+    }
+    .nav-modal {
+      display: flex;
+      z-index: 0;
+      background-color: transparent;
+      position: relative;
+      .nav-bar {
+        background-color: variables.$off-white;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5em;
+        height: 100%;
+        margin-left: 0px;
+        padding: 0px;
+        width: 100%;
+        .nav-link {
+          color: variables.$dark-grayish-blue;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    .nav-modal {
+      .nav-bar {
+        .nav-link {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}

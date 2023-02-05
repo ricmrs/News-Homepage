@@ -1,4 +1,4 @@
-@use "../utilities/variables";
+@use "../../../utilities/variables";
 
 .most-popular {
   .title {
@@ -26,6 +26,7 @@
       }
       .image {
         grid-area: 1/1/4/2;
+        height: 100%;
         width: 6em;
       }
     }
@@ -38,6 +39,40 @@
     @for $i from 1 through 3 {
       .post:nth-child(n+#{$i})::before {
         content: '0#{$i}';
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .most-popular {
+    .list {
+      display: flex;
+      justify-content: space-between;
+      .post {
+        padding-right: 0px;
+        width: 32%;
+        .title {
+          font-size: 0.85em;
+        }
+        .subtitle {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .most-popular {
+    .list {
+      .post {
+        .title {
+          font-size: 1.2em;
+        }
+        .subtitle {
+          font-size: 1em;
+        }
       }
     }
   }

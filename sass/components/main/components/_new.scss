@@ -1,8 +1,7 @@
-@use "../utilities/variables";
+@use "../../../utilities/variables";
 
 .new {
   background-color: variables.$very-dark-blue;
-  margin-bottom: 40px;
   padding: 25px 20px;
   .title {
     color: variables.$orange;
@@ -12,12 +11,12 @@
   .list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.5em;
     .post {
       .title {
         color: variables.$off-white;
         font-size: 1.25em;
-        margin-bottom: 12px;
+        margin-bottom: 1em;
       }
       .subtitle {
         color: variables.$dark-grayish-blue;
@@ -29,6 +28,14 @@
     .line {
       background-color: variables.$dark-grayish-blue;
       height: 1px;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .new {
+    .list {
+      gap: 3em;
     }
   }
 }
